@@ -5,5 +5,22 @@
     <string name="logo_description">Logo</string>
     <string name="discover_events_text">DISCOVER EVENTS</string>
     <string name="sing_in_btn_text">Sing in</string>
-    <string name="log_in_btn_text">Log in</string>
+
+    <string name="btn_log_in_text">Log In</string>
+    <string name="btn_sign_in_text">Sign In</string>
+    <string name="done_string">Done</string>
+    <string name="question_categories">What interests you? Tap a few categories you like</string>
+    <string name="omit_string"><![CDATA[Omit->]]></string>
+    <string name="email_string">\t Email</string>
+    <string name="password_string">\t Password</string>
+    <string name="login_string">Log In</string>
+    <string name="image_button_go_to_back_string">image button go to back</string>
+    <string name="ip_pass">input,enter your password</string>
+    <string name="forgot_pass_string">Forgot password?</string>
+    <string name="signup_string">SignUp</string>
+    <string name="new_user_string">New User?</string>
+    <string name="remember_me_string">Remember me</string>
+    <string name="FullName_string">\t Full Name</string>
+    <string name="UserName_string">\t Username</string>
+    <string name="confirmpass_string">\t Confirm password</string>
 </resources>

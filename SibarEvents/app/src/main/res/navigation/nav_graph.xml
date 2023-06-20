@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstPage">
+
+    <fragment
+        android:id="@+id/firstPage"
+        android:name="com.project.sibarevents.ui.FirstPage"
+        android:label="fragment_first_page"
+        tools:layout="@layout/fragment_first_page" >
+        <action
+            android:id="@+id/action_firstPage_to_login_signin"
+            app:destination="@id/login_signin" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_signin"
+        android:name="com.project.sibarevents.ui.Login_signin"
+        android:label="fragment_login_signin"
+        tools:layout="@layout/fragment_login_signin" >
+        <action
+            android:id="@+id/action_login_signin_to_firstPage"
+            app:destination="@id/firstPage" />
+        <action
+            android:id="@+id/action_login_signin_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login_signin_to_login2"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.project.sibarevents.ui.register.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_login_signin"
+            app:destination="@id/login_signin" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCategories"
+        android:name="com.project.sibarevents.ui.SelectCategories"
+        android:label="fragment_select_categories"
+        tools:layout="@layout/fragment_select_categories" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.project.sibarevents.ui.login.Login"
+        android:label="Login" />
+</navigation>
