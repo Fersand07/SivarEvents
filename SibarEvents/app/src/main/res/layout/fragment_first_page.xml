@@ -11,6 +11,7 @@
     tools:context=".FirstPage"
     android:background="@drawable/backgroundfirst">
 
+
     <Button
         android:id="@+id/btnDiscover"
         android:layout_width="250dp"
