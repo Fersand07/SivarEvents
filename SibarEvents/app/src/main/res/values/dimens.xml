@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_gap">8dp</dimen>
+    <dimen name="medium_gap">16dp</dimen>
+    <dimen name="larga_gap">32dp</dimen>
+    <dimen name="cv_categories">150dp</dimen>
+    <dimen name="btn_back">48dp</dimen>
+    <dimen name="standard_size">48dp</dimen>
+    <dimen name="small_icon">30dp</dimen>
+
+
+</resources>
