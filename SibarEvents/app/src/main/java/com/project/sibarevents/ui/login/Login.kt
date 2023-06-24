@@ -17,7 +17,6 @@ class Login : Fragment() {
     private lateinit var nextButton: ImageButton
     private lateinit var forgotPass: TextView
     private lateinit var singUp: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -47,8 +46,7 @@ class Login : Fragment() {
     }
 
     private fun listeners() {
-
-       nextButton.setOnClickListener {
+        nextButton.setOnClickListener {
             it.findNavController().navigate(R.id.action_login_to_selectCategories)
         }
         backButton.setOnClickListener {
@@ -62,6 +60,6 @@ class Login : Fragment() {
         singUp.setOnClickListener {
             it.findNavController().navigate(R.id.action_login_to_register)
         }
-
     }
+
 }

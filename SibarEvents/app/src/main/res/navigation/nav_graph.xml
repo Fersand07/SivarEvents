@@ -46,15 +46,16 @@
     <fragment
         android:id="@+id/login"
         android:name="com.project.sibarevents.ui.login.Login"
-        android:label="Login" >
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
         <action
             android:id="@+id/action_login_to_selectCategories"
             app:destination="@id/selectCategories" />
         <action
-            android:id="@+id/action_login_to_register"
-            app:destination="@id/register" />
-        <action
             android:id="@+id/action_login_to_login_signin"
             app:destination="@id/login_signin" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
     </fragment>
 </navigation>
