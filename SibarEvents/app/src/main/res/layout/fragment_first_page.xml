@@ -2,7 +2,8 @@
 
 
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
@@ -16,14 +17,16 @@
         android:id="@+id/btnDiscover"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:background="@color/btnColor"
-        android:text="@string/discover_events_text"
+        android:backgroundTint="#FF9800"
         android:textColor="@color/white"
         android:textSize="15sp"
+        app:cornerRadius="8dp"
+        android:text="@string/discover_events_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/button_to_start"/>
 
     <ImageView
         android:layout_width="120dp"

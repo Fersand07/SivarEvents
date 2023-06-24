@@ -24,16 +24,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:backgroundTint="@color/btnColor"
         android:id="@+id/btn_register"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:alpha="0.8"
-        android:background="@drawable/rounded_button_background"
-        android:text="Register"
+        android:text="@string/register_string"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_size_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnBack" />

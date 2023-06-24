@@ -23,4 +23,9 @@
     <string name="FullName_string">\t Full Name</string>
     <string name="UserName_string">\t Username</string>
     <string name="confirmpass_string">\t Confirm password</string>
+    <string name="button_to_back_description">button to back screem</string>
+    <string name="register_string">Register</string>
+    <string name="button_to_start">button to start</string>
+
+
 </resources>

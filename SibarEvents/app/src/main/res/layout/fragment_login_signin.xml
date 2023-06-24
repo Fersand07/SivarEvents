@@ -20,15 +20,16 @@
         android:scaleType="centerCrop"
         android:src="@drawable/arrow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/button_to_back_description"/>
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="180dp"
+        android:layout_width="@dimen/width_button"
         android:layout_height="wrap_content"
         android:text="@string/sing_in_btn_text"
         android:textAllCaps="false"
-        android:textSize="20sp"
+        android:textSize="@dimen/button_size_text"
         android:alpha="0.8"
         android:background="@drawable/rounded_button_background"
         android:textColor="@color/white"
@@ -47,10 +48,10 @@
 
     <Button
         android:id="@+id/btnLogIn"
-        android:layout_width="180dp"
+        android:layout_width="@dimen/width_button"
         android:layout_height="wrap_content"
-        android:text="@string/log_in_btn_text"
-        android:textSize="20sp"
+        android:text="@string/btn_log_in_text"
+        android:textSize="@dimen/button_size_text"
         android:textAllCaps="false"
         android:alpha="0.8"
         android:background="@drawable/rounded_button_alternative_background"

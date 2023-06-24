@@ -12,9 +12,11 @@ import com.project.sibarevents.R
 
 
 class Login : Fragment() {
-    
 
-
+    private lateinit var backButton: ImageButton
+    private lateinit var nextButton: ImageButton
+    private lateinit var forgotPass: TextView
+    private lateinit var singUp: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,24 +39,29 @@ class Login : Fragment() {
         listeners()
     }
     private fun bind() {
-       
+        nextButton = view?.findViewById(R.id.btnNext) as ImageButton
+        backButton = view?.findViewById(R.id.btnBack) as ImageButton
+        forgotPass = view?.findViewById(R.id.TV_ForgotPass) as TextView
+        singUp = view?.findViewById(R.id.Tv_singUp) as TextView
 
     }
 
     private fun listeners() {
-       /*
-       *  nextButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_categoryFragment)
+
+       nextButton.setOnClickListener {
+            it.findNavController().navigate(R.id.action_login_to_selectCategories)
         }
         backButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_login_signin)
+            it.findNavController().navigate(R.id.action_login_to_login_signin)
         }
-        forgotPass.setOnClickListener {
+        /*
+        * forgotPass.setOnClickListener {
             it.findNavController().navigate(R.id.action_loginFragment_to_forgotPasswordFragment)
         }
+        * */
         singUp.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+            it.findNavController().navigate(R.id.action_login_to_register)
         }
-       * */
+
     }
 }
