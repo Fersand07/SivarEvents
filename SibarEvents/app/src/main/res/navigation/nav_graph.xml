@@ -37,12 +37,19 @@
         <action
             android:id="@+id/action_register_to_login_signin"
             app:destination="@id/login_signin" />
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
     </fragment>
     <fragment
         android:id="@+id/selectCategories"
-        android:name="com.project.sibarevents.ui.SelectCategories"
+        android:name="com.project.sibarevents.ui.categories.SelectCategories"
         android:label="fragment_select_categories"
-        tools:layout="@layout/fragment_select_categories" />
+        tools:layout="@layout/fragment_select_categories" >
+        <action
+            android:id="@+id/action_selectCategories_to_feed"
+            app:destination="@id/feed" />
+    </fragment>
     <fragment
         android:id="@+id/login"
         android:name="com.project.sibarevents.ui.login.Login"
@@ -57,5 +64,23 @@
         <action
             android:id="@+id/action_login_to_register"
             app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/feed"
+        android:name="com.project.sibarevents.ui.categories.home.Feed"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feed_to_favoriesCategories"
+            app:destination="@id/favoriesCategories" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriesCategories"
+        android:name="com.project.sibarevents.ui.categories.favorites.FavoriesCategories"
+        android:label="fragment_favories_categories"
+        tools:layout="@layout/fragment_favories_categories" >
+        <action
+            android:id="@+id/action_favoriesCategories_to_feed"
+            app:destination="@id/feed" />
     </fragment>
 </navigation>

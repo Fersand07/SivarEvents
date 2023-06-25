@@ -27,5 +27,9 @@
     <string name="register_string">Register</string>
     <string name="button_to_start">button to start</string>
 
+    <string name="mora_location">Nuevo Cuscatlan</string>
+    <string name="mora_day_hour">Friday apr 28 2023 at 8:00 pm</string>
+    <string name="mora_title">Concert - Mora in El Salvador</string>
+
 
 </resources>

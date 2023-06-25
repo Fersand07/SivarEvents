@@ -9,6 +9,14 @@
     <dimen name="small_icon">30dp</dimen>
     <dimen name="width_button">180dp</dimen>
     <dimen name="button_size_text">20sp</dimen>
+    <dimen name="mediumLargeTextGap">24sp</dimen>
+    <dimen name="largeTextGap">30sp</dimen>
 
-
+    <dimen name="smallGap">8dp</dimen>
+    <dimen name="mediumGap">16dp</dimen>
+    <dimen name="extraLargeTextGap">42sp</dimen>
+    <dimen name="LargeGap">120dp</dimen>
+    <dimen name="extraLargeGap">300dp</dimen>
+    <dimen name="mediumTextGap">20sp</dimen>
+    <dimen name="noGap">0dp</dimen>
 </resources>

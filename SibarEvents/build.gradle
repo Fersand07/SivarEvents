@@ -3,8 +3,8 @@
 buildscript {
     ext {
         lifecycle_version = "2.6.1"
-        activity_version = "1.6.1"
-        fragment_version = "1.5.5"
+        activity_version = '1.7.2'
+        fragment_version = '1.6.0'
     }
 }
 plugins {
