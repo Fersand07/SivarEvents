@@ -1,4 +1,4 @@
-package com.project.sibarevents.ui.categories
+package com.project.sibarevents.ui.event.categories.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,8 +9,11 @@ import android.widget.Button
 import androidx.navigation.findNavController
 import com.project.sibarevents.R
 
-class SelectCategories : Fragment() {
-    private lateinit var buttonDone: Button
+
+class Feed : Fragment() {
+
+    private lateinit var buttonNav: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -18,10 +21,12 @@ class SelectCategories : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_select_categories, container, false)
+        return inflater.inflate(R.layout.fragment_feed, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,14 +35,13 @@ class SelectCategories : Fragment() {
         listener()
     }
 
+    private fun bind() {
+        buttonNav= view?.findViewById(R.id.nav_fav) as Button
+    }
+
     private fun listener() {
-        buttonDone.setOnClickListener {
-            it.findNavController().navigate(R.id.action_selectCategories_to_feed)
+        buttonNav.setOnClickListener {
+            it.findNavController().navigate(R.id.action_feed_to_favoriesCategories)
         }
     }
-
-    private fun bind() {
-        buttonDone = view?.findViewById(R.id.btnDone_categories) as Button
-    }
-
 }

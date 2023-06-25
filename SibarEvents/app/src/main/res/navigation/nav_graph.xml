@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectCategories"
-        android:name="com.project.sibarevents.ui.categories.SelectCategories"
+        android:name="com.project.sibarevents.ui.event.categories.SelectCategories"
         android:label="fragment_select_categories"
         tools:layout="@layout/fragment_select_categories" >
         <action
@@ -67,20 +67,62 @@
     </fragment>
     <fragment
         android:id="@+id/feed"
-        android:name="com.project.sibarevents.ui.categories.home.Feed"
+        android:name="com.project.sibarevents.ui.event.categories.home.Feed"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed" >
         <action
             android:id="@+id/action_feed_to_favoriesCategories"
             app:destination="@id/favoriesCategories" />
+        <action
+            android:id="@+id/action_feed_to_categories"
+            app:destination="@id/categories" />
+        <action
+            android:id="@+id/action_feed_to_myProfile"
+            app:destination="@id/myProfile" />
     </fragment>
     <fragment
         android:id="@+id/favoriesCategories"
-        android:name="com.project.sibarevents.ui.categories.favorites.FavoriesCategories"
+        android:name="com.project.sibarevents.ui.event.categories.favorites.FavoriesCategories"
         android:label="fragment_favories_categories"
         tools:layout="@layout/fragment_favories_categories" >
         <action
             android:id="@+id/action_favoriesCategories_to_feed"
+            app:destination="@id/feed" />
+        <action
+            android:id="@+id/action_favoriesCategories_to_categories"
+            app:destination="@id/categories" />
+        <action
+            android:id="@+id/action_favoriesCategories_to_myProfile"
+            app:destination="@id/myProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.project.sibarevents.ui.event.categories.categories.categories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categories_to_myProfile2"
+            app:destination="@id/myProfile" />
+        <action
+            android:id="@+id/action_categories_to_favoriesCategories"
+            app:destination="@id/favoriesCategories" />
+        <action
+            android:id="@+id/action_categories_to_feed"
+            app:destination="@id/feed" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfile"
+        android:name="com.project.sibarevents.ui.event.categories.me.MyProfile"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" >
+        <action
+            android:id="@+id/action_myProfile_to_categories"
+            app:destination="@id/categories" />
+        <action
+            android:id="@+id/action_myProfile_to_favoriesCategories"
+            app:destination="@id/favoriesCategories" />
+        <action
+            android:id="@+id/action_myProfile_to_feed"
             app:destination="@id/feed" />
     </fragment>
 </navigation>

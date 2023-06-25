@@ -1,4 +1,4 @@
-package com.project.sibarevents.ui.categories.favorites
+package com.project.sibarevents.ui.event.categories.categories
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import com.project.sibarevents.R
 
 
-class FavoriesCategories : Fragment() {
-
+class categories : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +22,6 @@ class FavoriesCategories : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favories_categories, container, false)
+        return inflater.inflate(R.layout.fragment_categories, container, false)
     }
-
-
 }

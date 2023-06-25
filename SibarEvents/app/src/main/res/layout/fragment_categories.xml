@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.event.categories.home.Feed"
-    android:background="@drawable/backgroundcat">
+    tools:context=".ui.event.categories.categories.categories"
+    android:background="@drawable/backgroundcategories"
+    >
 
     <TextView
         android:id="@+id/text_favorites"
@@ -13,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
         android:layout_marginTop="68dp"
-        android:text="Feed"
+        android:text="Categories"
         android:textColor="@color/white"
         android:textSize="48dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +23,7 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="167dp"
+        android:layout_width="267dp"
         android:layout_height="2dp"
         android:background="@color/white"
         app:layout_constraintStart_toStartOf="@+id/text_favorites"
@@ -37,8 +39,8 @@
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
             android:id="@+id/bottom_navigation"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:menu="@menu/bottom_navigation_menu" />
@@ -46,11 +48,12 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:id="@+id/recyclerView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
