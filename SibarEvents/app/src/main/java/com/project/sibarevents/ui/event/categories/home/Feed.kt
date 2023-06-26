@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+
 import com.project.sibarevents.R
+import com.project.sibarevents.data.model.EventModel
 import com.project.sibarevents.databinding.FragmentFeedBinding
+import com.project.sibarevents.ui.event.recyclerview.EventRecyclerViewAdapter
 import com.project.sibarevents.ui.viewmodel.EventViewModel
 
 
@@ -20,8 +22,8 @@ class Feed : Fragment() {
         EventViewModel.Factory
     }
 
-    private lateinit var buttonNav: Button
     private lateinit var binding: FragmentFeedBinding
+    private lateinit var adapter: EventRecyclerViewAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,40 +35,47 @@ class Feed : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        bind()
-        listener()
 
-    }
 
-    private fun bind() {
-        buttonNav= view?.findViewById(R.id.nav_fav) as Button
-    }
-
-    private fun listener() {
-        buttonNav.setOnClickListener {
-            it.findNavController().navigate(R.id.action_feed_to_favoriesCategories)
+        binding.bottomNavigation.setOnItemReselectedListener { item ->
+            when(item.itemId) {
+                R.id.nav_fav -> {
+                    // Respond to navigation item 1 reselection
+                    findNavController().navigate(R.id.action_feed_to_favoriesCategories)
+                    true
+                }
+                R.id.nav_me -> {
+                    // Respond to navigation item 2 reselection
+                    findNavController().navigate(R.id.action_feed_to_myProfile)
+                    true
+                }
+                R.id.nav_cat -> {
+                    // Respond to navigation item 2 reselection
+                    findNavController().navigate(R.id.action_feed_to_categories)
+                    true
+                }
+                else -> false
+            }
         }
+
     }
-    /*
-    * private fun setRecyclerView(view: View){
+
+    private fun setRecyclerView(view: View){
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
 
-        adapter = EventRecycleViewAdapter { selectedEvent ->
+        adapter = EventRecyclerViewAdapter { selectedEvent ->
             showSelectedItem(selectedEvent)
         }
     }
-    * ///////////////////////////////////////////////////////////////
-    * private fun displayMovies() {
+
+    private fun displayEvents(){
         adapter.setData(eventViewModel.getEvents())
         adapter.notifyDataSetChanged()
     }
 
-    private fun showSelectedItem(event: EventModel) {
+    private fun showSelectedItem(event: EventModel){
         eventViewModel.setSelectedEvent(event)
-        findNavController().navigate(R.id.action_Feed_to_//TODO AGREGAR VISTA DE DESCRIPCION DE EVENTOS)
+        //TODO: AGREGAR INFORMACION DE EVENTOS
     }
-    * */
-
-
 
 }

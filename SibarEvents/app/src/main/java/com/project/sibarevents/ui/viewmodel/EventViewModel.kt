@@ -71,6 +71,13 @@ class EventViewModel (private val repository: EventRepository) : ViewModel() {
 
         status.value = EVENT_CREATED
     }
+    fun setSelectedEvent(event: EventModel){
+        name.value = event.name
+        day_hour.value = event.day_hour
+        description.value = event.description
+        location.value = event.location
+        category.value = event.category
+    }
 
     companion object{
         val Factory = viewModelFactory {

@@ -9,16 +9,19 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 
 import com.project.sibarevents.R
+import com.project.sibarevents.databinding.FragmentFeedBinding
+import com.project.sibarevents.ui.event.categories.categories.categories
+import com.project.sibarevents.ui.event.categories.home.Feed
 
 
 class FirstPage : Fragment() {
     private lateinit var buttonDiscover: Button
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
 
-        }
     }
 
     override fun onCreateView(
@@ -27,6 +30,7 @@ class FirstPage : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_first_page, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -44,4 +48,5 @@ class FirstPage : Fragment() {
     private fun bind() {
         buttonDiscover = view?.findViewById(R.id.btnDiscover) as Button
     }
+
 }

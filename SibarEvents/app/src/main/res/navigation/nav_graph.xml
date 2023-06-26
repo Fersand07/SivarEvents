@@ -109,6 +109,9 @@
         <action
             android:id="@+id/action_categories_to_feed"
             app:destination="@id/feed" />
+        <action
+            android:id="@+id/action_categories_to_myProfile"
+            app:destination="@id/myProfile" />
     </fragment>
     <fragment
         android:id="@+id/myProfile"
