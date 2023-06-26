@@ -35,6 +35,8 @@ class Feed : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setRecyclerView(view)
+
 
 
         binding.bottomNavigation.setOnItemReselectedListener { item ->
@@ -66,6 +68,9 @@ class Feed : Fragment() {
         adapter = EventRecyclerViewAdapter { selectedEvent ->
             showSelectedItem(selectedEvent)
         }
+
+        binding.recyclerView.adapter = adapter
+        displayEvents()
     }
 
     private fun displayEvents(){
