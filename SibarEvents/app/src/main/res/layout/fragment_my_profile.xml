@@ -36,6 +36,181 @@
         app:layout_constraintStart_toStartOf="@+id/text_favorites"
         app:layout_constraintTop_toBottomOf="@+id/text_favorites" />
 
+    <TextView
+        android:id="@+id/titleuser"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/cornel_float_button"
+        android:padding="8dp"
+        android:text="@string/i_participante"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="288dp"
+        android:layout_height="168dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/gray"
+        android:elevation="24dp"
+        app:cardCornerRadius="@dimen/smallGap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_favorites"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/image_card_view_profile"
+                android:layout_margin="@dimen/smallGap"
+                app:cardCornerRadius="60dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imgprofile"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="John Doe"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EdFirsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/john_example"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleuser">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/EDP_FullName"
+            android:layout_width="@dimen/stanrd_profile_width"
+            android:layout_height="@dimen/standart_profile_height"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EdLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/doe_example"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdFirsName">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/EDP_LastName"
+            android:layout_width="@dimen/stanrd_profile_width"
+            android:layout_height="@dimen/standart_profile_height"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EdUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/UserName_string"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdLastName">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/EDP_Username"
+            android:layout_width="@dimen/stanrd_profile_width"
+            android:layout_height="@dimen/standart_profile_height"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EdCellphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/johndoe07_exaple"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdUsername">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/EDP_Cellphone"
+            android:layout_width="@dimen/stanrd_profile_width"
+            android:layout_height="@dimen/standart_profile_height"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EdEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/johndoe077_gmail_com_example"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdCellphone">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/EDP_Email"
+            android:layout_width="@dimen/stanrd_profile_width"
+            android:layout_height="@dimen/standart_profile_height"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -54,7 +229,69 @@
 
     </LinearLayout>
 
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        app:layout_constraintBottom_toBottomOf="@+id/EdFirsName"
+        app:layout_constraintEnd_toStartOf="@+id/EdFirsName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/EdFirsName" />
 
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        app:layout_constraintBottom_toBottomOf="@+id/EdLastName"
+        app:layout_constraintEnd_toStartOf="@+id/EdLastName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdFirsName" />
 
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UserName_string"
+        app:layout_constraintBottom_toBottomOf="@+id/EdUsername"
+        app:layout_constraintEnd_toStartOf="@+id/EdUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdLastName" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cellphone"
+        app:layout_constraintBottom_toBottomOf="@+id/EdCellphone"
+        app:layout_constraintEnd_toStartOf="@+id/EdCellphone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/EdCellphone" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_string"
+        app:layout_constraintBottom_toBottomOf="@+id/EdEmail"
+        app:layout_constraintEnd_toStartOf="@+id/EdEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/EdEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="36sp"
+        android:background="@drawable/cornel_float_button"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EdEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

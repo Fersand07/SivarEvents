@@ -42,18 +42,18 @@ class Feed : Fragment() {
         binding.bottomNavigation.setOnItemReselectedListener { item ->
             when(item.itemId) {
                 R.id.nav_fav -> {
-                    // Respond to navigation item 1 reselection
+                    // Respond to navigation item 2 reselection
                     findNavController().navigate(R.id.action_feed_to_favoriesCategories)
                     true
                 }
-                R.id.nav_me -> {
-                    // Respond to navigation item 2 reselection
-                    findNavController().navigate(R.id.action_feed_to_myProfile)
+                R.id.nav_cat -> {
+                    // Respond to navigation item 3 reselection
+                    findNavController().navigate(R.id.action_feed_to_categories)
                     true
                 }
-                R.id.nav_cat -> {
-                    // Respond to navigation item 2 reselection
-                    findNavController().navigate(R.id.action_feed_to_categories)
+                R.id.nav_me -> {
+                    // Respond to navigation item 4 reselection
+                    findNavController().navigate(R.id.action_feed_to_myProfile)
                     true
                 }
                 else -> false

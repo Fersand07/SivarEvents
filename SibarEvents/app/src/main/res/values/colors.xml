@@ -4,9 +4,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#E6979191</color>
+
 
     //Button color
     <color name="btnColor">#FF9800</color>
+    <color name="btnColor2">#B2FF9800</color>
+
     //Alternative button color
     <color name="alternativebtnColor">#8B0000</color>
 </resources>

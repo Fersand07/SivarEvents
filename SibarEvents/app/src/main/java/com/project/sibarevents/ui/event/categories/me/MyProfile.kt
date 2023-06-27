@@ -8,10 +8,11 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.project.sibarevents.R
 import com.project.sibarevents.databinding.FragmentFavoriesCategoriesBinding
+import com.project.sibarevents.databinding.FragmentMyProfileBinding
 
 class MyProfile : Fragment() {
 
-    private lateinit var binding: FragmentFavoriesCategoriesBinding
+    private lateinit var binding: FragmentMyProfileBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -24,7 +25,7 @@ class MyProfile : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentFavoriesCategoriesBinding.inflate(inflater, container, false)
+        binding = FragmentMyProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
 

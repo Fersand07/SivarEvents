@@ -30,6 +30,15 @@
     <string name="mora_location">Nuevo Cuscatlan</string>
     <string name="mora_day_hour">Friday apr 28 2023 at 8:00 pm</string>
     <string name="mora_title">Concert - Mora in El Salvador</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="cellphone">Cellphone</string>
+    <string name="edit">Edit</string>
+    <string name="i_participante">I PARTICIPANTE</string>
+    <string name="john_example">John</string>
+    <string name="doe_example">Doe</string>
+    <string name="johndoe07_exaple">JohnDoe07</string>
+    <string name="johndoe077_gmail_com_example">johndoe077@gmail.com</string>
 
 
 </resources>

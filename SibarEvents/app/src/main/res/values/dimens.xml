@@ -19,4 +19,6 @@
     <dimen name="extraLargeGap">300dp</dimen>
     <dimen name="mediumTextGap">20sp</dimen>
     <dimen name="noGap">0dp</dimen>
+    <dimen name="stanrd_profile_width">260dp</dimen>
+    <dimen name="standart_profile_height">40dp</dimen>
 </resources>
