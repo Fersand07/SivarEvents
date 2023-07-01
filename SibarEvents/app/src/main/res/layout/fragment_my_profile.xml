@@ -99,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:hint="@string/john_example"
+        android:hint=""
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:hintTextColor="@color/white"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleuser">
 
         <com.google.android.material.textfield.TextInputEditText
-
+            android:textColor="@color/white"
             android:id="@+id/EDP_FullName"
             android:layout_width="@dimen/stanrd_profile_width"
             android:layout_height="@dimen/standart_profile_height"
@@ -119,21 +119,22 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/EdLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/stanrd_profile_width"
+        android:layout_height="@dimen/standart_profile_height"
         android:layout_marginTop="8dp"
-        android:hint="@string/doe_example"
+        android:hint=""
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:hintTextColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EdFirsName">
+        app:layout_constraintTop_toBottomOf="@+id/EdFirsName"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
-
+            android:textSize="12dp"
             android:id="@+id/EDP_LastName"
-            android:layout_width="@dimen/stanrd_profile_width"
-            android:layout_height="@dimen/standart_profile_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:alpha="0.3"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
@@ -145,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/UserName_string"
+        android:hint=""
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:hintTextColor="@color/white"
@@ -168,7 +169,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/johndoe07_exaple"
+        android:hint=""
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:hintTextColor="@color/white"
@@ -191,7 +192,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="@string/johndoe077_gmail_com_example"
+        android:hint=""
         android:textColorHint="@color/white"
         app:boxStrokeColor="@color/white"
         app:hintTextColor="@color/white"

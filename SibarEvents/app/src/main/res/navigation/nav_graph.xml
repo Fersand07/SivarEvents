@@ -64,6 +64,9 @@
         <action
             android:id="@+id/action_login_to_register"
             app:destination="@id/register" />
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
     </fragment>
     <fragment
         android:id="@+id/feed"
@@ -127,5 +130,14 @@
         <action
             android:id="@+id/action_myProfile_to_feed"
             app:destination="@id/feed" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.project.sibarevents.ui.login.forgotPassword.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword_to_login"
+            app:destination="@id/login" />
     </fragment>
 </navigation>
