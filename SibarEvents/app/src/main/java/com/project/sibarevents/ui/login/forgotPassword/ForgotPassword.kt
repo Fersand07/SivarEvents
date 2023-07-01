@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.navigation.findNavController
 import com.project.sibarevents.R
-
-
 
 
 class ForgotPassword : Fragment() {
@@ -24,14 +23,18 @@ class ForgotPassword : Fragment() {
         return inflater.inflate(R.layout.fragment_forgot_password, container, false)
     }
 
+    private fun bind() {
+        nextButton = view?.findViewById(R.id.btnNext) as ImageButton
+        backButton = view?.findViewById(R.id.btnBack) as ImageButton
 
+    }
     private fun listeners(){
 
         nextButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_login_to_selectCategories)
+            it.findNavController().navigate(R.id.action_forgotPassword_to_corfirmEmail)
         }
         backButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_login_to_login_signin)
+            it.findNavController().navigate(R.id.action_forgotPassword_to_login)
         }
 
     }
