@@ -27,7 +27,7 @@
         android:id="@+id/login"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="125dp"
         android:alpha="0.8"
         android:background="@drawable/rounded_button_background"
         android:text="@string/login_string"
@@ -57,7 +57,7 @@
             android:id="@+id/EtLogin_email"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -80,7 +80,7 @@
             android:id="@+id/EtLogin_password"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -100,11 +100,9 @@
         android:id="@+id/checkbox_remember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/CvPASSWORD"
-        app:layout_constraintTop_toBottomOf="@+id/CvPASSWORD"
         android:buttonTint="@color/btnColor"
-        />
+        app:layout_constraintStart_toStartOf="@+id/CvPASSWORD"
+        app:layout_constraintTop_toBottomOf="@+id/TV_ForgotPass" />
 
     <CheckedTextView
         android:id="@+id/checkedTextView"
@@ -121,7 +119,6 @@
         android:layout_width="@dimen/btn_back"
         android:layout_height="@dimen/btn_back"
         android:layout_margin="@dimen/medium_gap"
-        android:layout_marginTop="32dp"
         android:background="@drawable/rounded_background"
         android:contentDescription="@string/image_button_go_to_back_string"
         android:padding="8dp"
@@ -130,66 +127,59 @@
         app:layout_constraintEnd_toEndOf="@+id/TV_ForgotPass"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/checkbox_remember"
-        app:layout_constraintTop_toBottomOf="@+id/TV_ForgotPass" />
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_remember" />
 
     <ImageView
         android:id="@+id/IB_facebook"
         android:layout_width="@dimen/small_icon"
         android:layout_height="@dimen/small_icon"
-        android:layout_marginStart="16dp"
         android:src="@drawable/icon_facebook"
         app:layout_constraintBottom_toBottomOf="@+id/IB_google"
-        app:layout_constraintStart_toEndOf="@+id/IB_google"
-        app:layout_constraintTop_toTopOf="@+id/IB_google" />
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/IB_google"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/IB_google"
         android:layout_width="@dimen/small_icon"
         android:layout_height="@dimen/small_icon"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="32dp"
         android:src="@drawable/icon_google"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="32dp"
         android:text="@string/new_user_string"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/IB_google" />
 
     <TextView
-        android:textColor="@color/white"
-        android:textStyle="bold"
         android:id="@+id/Tv_singUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="@string/signup_string"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:text="OR \n Login With Social Media"
         android:textAlignment="center"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/IB_facebook"
         app:layout_constraintEnd_toEndOf="@+id/btnNext"
-        app:layout_constraintHorizontal_bias="0.367"
-        app:layout_constraintStart_toStartOf="@+id/btnNext" />
+        app:layout_constraintStart_toStartOf="@+id/btnNext"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

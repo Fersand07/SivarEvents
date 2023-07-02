@@ -47,7 +47,7 @@ class Login : Fragment() {
 
     private fun listeners() {
         nextButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_login_to_selectCategories)
+            it.findNavController().navigate(R.id.action_login_to_feed)
         }
         backButton.setOnClickListener {
             it.findNavController().navigate(R.id.action_login_to_login_signin)
