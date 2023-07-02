@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.project.sibarevents.ui.viewmodel.EventViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:background="@drawable/img_changespassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.forgotPassword.ChangesPass">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/btn_back"
+        android:layout_height="@dimen/btn_back"
+        android:layout_margin="@dimen/medium_gap"
+        android:background="@drawable/rounded_background"
+        android:contentDescription="@string/image_button_go_to_back_string"
+        android:padding="8dp"
+        android:rotation="90"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="@dimen/btn_back"
+        android:layout_height="@dimen/btn_back"
+        android:layout_margin="@dimen/medium_gap"
+        android:background="@drawable/rounded_background"
+        android:contentDescription="@string/image_button_go_to_back_string"
+        android:padding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/arro_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="New Password"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Enter New Password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/newpassword"
+        app:layout_constraintStart_toStartOf="@+id/newpassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Confirm Password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cofirmpass"
+        app:layout_constraintStart_toStartOf="@+id/cofirmpass" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_size"
+        android:hint="At lest 8 digits"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        tools:layout_editor_absoluteX="48dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Ed_NewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_size"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cofirmpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_size"
+        android:layout_marginTop="32dp"
+        android:hint="********"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newpassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Ed_ConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_size"
+            android:alpha="0.3"
+            android:background="@drawable/rounded_button_background"
+            android:textAlignment="center" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

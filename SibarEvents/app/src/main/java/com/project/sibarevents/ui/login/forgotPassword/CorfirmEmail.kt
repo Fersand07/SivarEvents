@@ -1,17 +1,18 @@
 package com.project.sibarevents.ui.login.forgotPassword
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.TextView
 import androidx.navigation.findNavController
 import com.project.sibarevents.R
 
 
-class ForgotPassword : Fragment() {
+class CorfirmEmail : Fragment() {
+
     private lateinit var backButton: ImageButton
     private lateinit var nextButton: ImageButton
 
@@ -20,7 +21,7 @@ class ForgotPassword : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_forgot_password, container, false)
+        return inflater.inflate(R.layout.fragment_corfirm_email, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,13 +37,12 @@ class ForgotPassword : Fragment() {
     private fun listeners(){
 
         nextButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_forgotPassword_to_corfirmEmail)
+            it.findNavController().navigate(R.id.action_corfirmEmail_to_changesPass)
         }
         backButton.setOnClickListener {
-            it.findNavController().navigate(R.id.action_forgotPassword_to_login)
+            it.findNavController().navigate(R.id.action_corfirmEmail_to_forgotPassword)
         }
 
     }
-
 
 }

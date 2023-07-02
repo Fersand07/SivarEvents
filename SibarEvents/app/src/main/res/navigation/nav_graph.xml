@@ -145,10 +145,13 @@
         <action
             android:id="@+id/action_forgotPassword_to_login2"
             app:destination="@id/login" />
+        <action
+            android:id="@+id/action_forgotPassword_to_register"
+            app:destination="@id/register" />
     </fragment>
     <fragment
         android:id="@+id/corfirmEmail"
-        android:name="com.project.sibarevents.ui.login.CorfirmEmail"
+        android:name="com.project.sibarevents.ui.login.forgotPassword.CorfirmEmail"
         android:label="fragment_corfirm_email"
         tools:layout="@layout/fragment_corfirm_email" >
         <action
@@ -157,5 +160,22 @@
         <action
             android:id="@+id/action_corfirmEmail_to_forgotPassword2"
             app:destination="@id/forgotPassword" />
+        <action
+            android:id="@+id/action_corfirmEmail_to_changesPass"
+            app:destination="@id/changesPass" />
+        <action
+            android:id="@+id/action_corfirmEmail_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/changesPass"
+        android:name="com.project.sibarevents.ui.login.forgotPassword.ChangesPass"
+        android:label="ChangesPass" >
+        <action
+            android:id="@+id/action_changesPass_to_corfirmEmail"
+            app:destination="@id/corfirmEmail" />
+        <action
+            android:id="@+id/action_changesPass_to_login"
+            app:destination="@id/login" />
     </fragment>
 </navigation>

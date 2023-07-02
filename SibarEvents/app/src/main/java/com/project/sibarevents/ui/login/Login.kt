@@ -52,11 +52,11 @@ class Login : Fragment() {
         backButton.setOnClickListener {
             it.findNavController().navigate(R.id.action_login_to_login_signin)
         }
-        /*
-        * forgotPass.setOnClickListener {
-            it.findNavController().navigate(R.id.action_loginFragment_to_forgotPasswordFragment)
+
+        forgotPass.setOnClickListener {
+            it.findNavController().navigate(R.id.action_login_to_forgotPassword)
         }
-        * */
+
         singUp.setOnClickListener {
             it.findNavController().navigate(R.id.action_login_to_register)
         }
