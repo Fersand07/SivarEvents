@@ -41,7 +41,7 @@ class FirstPage : Fragment() {
 
     private fun listener() {
         buttonDiscover.setOnClickListener {
-            it.findNavController().navigate(R.id.action_firstPage_to_login_signin)
+            it.findNavController().navigate(R.id.action_firstPage_to_selectCategories)
         }
     }
 

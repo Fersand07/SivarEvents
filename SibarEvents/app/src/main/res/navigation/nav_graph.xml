@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_firstPage_to_login_signin"
             app:destination="@id/login_signin" />
+        <action
+            android:id="@+id/action_firstPage_to_selectCategories"
+            app:destination="@id/selectCategories" />
     </fragment>
     <fragment
         android:id="@+id/login_signin"
@@ -28,6 +31,9 @@
         <action
             android:id="@+id/action_login_signin_to_login"
             app:destination="@id/login" />
+        <action
+            android:id="@+id/action_login_signin_to_selectCategories"
+            app:destination="@id/selectCategories" />
     </fragment>
     <fragment
         android:id="@+id/register"
@@ -49,6 +55,9 @@
         <action
             android:id="@+id/action_selectCategories_to_feed"
             app:destination="@id/feed" />
+        <action
+            android:id="@+id/action_selectCategories_to_login_signin"
+            app:destination="@id/login_signin" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -67,6 +76,9 @@
         <action
             android:id="@+id/action_login_to_forgotPassword"
             app:destination="@id/forgotPassword" />
+        <action
+            android:id="@+id/action_login_to_feed"
+            app:destination="@id/feed" />
     </fragment>
     <fragment
         android:id="@+id/feed"
@@ -147,6 +159,9 @@
             app:destination="@id/login" />
         <action
             android:id="@+id/action_forgotPassword_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_forgotPassword_to_register2"
             app:destination="@id/register" />
     </fragment>
     <fragment
