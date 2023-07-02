@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/cofirmpass" />
 
     <TextView
         android:id="@+id/textView15"
@@ -92,8 +92,8 @@
 
             android:id="@+id/Ed_NewPassword"
             android:layout_width="match_parent"
+            android:textColor="@color/black"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -118,7 +118,7 @@
             android:id="@+id/Ed_ConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
