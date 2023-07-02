@@ -13,13 +13,14 @@
     <Button
         android:id="@+id/btnDone_categories"
         android:layout_width="180dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:alpha="0.8"
         android:background="@drawable/rounded_button_background"
         android:text="@string/done_string"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/skip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Lay_main" />
@@ -29,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnDone_categories"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TV_categories">
@@ -36,8 +38,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="@dimen/cv_categories"
@@ -49,11 +50,11 @@
                 android:layout_height="@dimen/cv_categories"
                 android:src="@drawable/concerts" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="@dimen/cv_categories"
@@ -65,11 +66,11 @@
                 android:layout_height="@dimen/cv_categories"
                 android:src="@drawable/festival" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="@dimen/cv_categories"
@@ -81,11 +82,12 @@
                 android:layout_height="@dimen/cv_categories"
                 android:src="@drawable/sport" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" android:layout_gravity="center"
-            >
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="@dimen/cv_categories"
@@ -103,22 +105,25 @@
         android:id="@+id/TV_categories"
         android:layout_width="250dp"
         android:layout_height="35dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="16dp"
         android:alpha="0.8"
         android:background="@color/btnColor"
+
         android:text="@string/question_categories"
         android:textColor="@color/white"
-
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/omit_string"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnDone_categories"
         app:layout_constraintStart_toStartOf="@+id/btnDone_categories"
         app:layout_constraintTop_toBottomOf="@+id/btnDone_categories" />
