@@ -58,7 +58,7 @@
             android:id="@+id/IP_FullName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -84,7 +84,7 @@
             android:id="@+id/IP_UserName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -110,7 +110,7 @@
             android:id="@+id/IP_Email"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -136,8 +136,8 @@
 
             android:id="@+id/IP_Password"
             android:layout_width="match_parent"
+            android:textColor="@color/black"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -164,7 +164,7 @@
             android:id="@+id/IP_ConfirmPass"
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
-            android:alpha="0.3"
+            android:textColor="@color/black"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
