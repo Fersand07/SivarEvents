@@ -11,7 +11,7 @@
     <string name="done_string">Done</string>
     <string name="question_categories">What interests you? Tap a few categories you like</string>
     <string name="omit_string"><![CDATA[Omit->]]></string>
-    <string name="email_string">\t Email</string>
+    <string name="email_string">\tEmail</string>
     <string name="password_string">\t Password</string>
     <string name="login_string">Log In</string>
     <string name="image_button_go_to_back_string">image button go to back</string>
@@ -21,7 +21,7 @@
     <string name="new_user_string">New User?</string>
     <string name="remember_me_string">Remember me</string>
     <string name="FullName_string">\t Full Name</string>
-    <string name="UserName_string">\t Username</string>
+    <string name="UserName_string">\tUsername</string>
     <string name="confirmpass_string">\t Confirm password</string>
     <string name="button_to_back_description">button to back screem</string>
     <string name="register_string">Register</string>
@@ -39,6 +39,7 @@
     <string name="doe_example">Doe</string>
     <string name="johndoe07_exaple">JohnDoe07</string>
     <string name="johndoe077_gmail_com_example">johndoe077@gmail.com</string>
+    <string name="okbtn">OK</string>
 
 
 </resources>

@@ -142,6 +142,9 @@
         <action
             android:id="@+id/action_myProfile_to_feed"
             app:destination="@id/feed" />
+        <action
+            android:id="@+id/action_myProfile_to_editProfile"
+            app:destination="@id/editProfile" />
     </fragment>
     <fragment
         android:id="@+id/forgotPassword"
@@ -155,13 +158,7 @@
             android:id="@+id/action_forgotPassword_to_corfirmEmail"
             app:destination="@id/corfirmEmail" />
         <action
-            android:id="@+id/action_forgotPassword_to_login2"
-            app:destination="@id/login" />
-        <action
             android:id="@+id/action_forgotPassword_to_register"
-            app:destination="@id/register" />
-        <action
-            android:id="@+id/action_forgotPassword_to_register2"
             app:destination="@id/register" />
     </fragment>
     <fragment
@@ -171,9 +168,6 @@
         tools:layout="@layout/fragment_corfirm_email" >
         <action
             android:id="@+id/action_corfirmEmail_to_forgotPassword"
-            app:destination="@id/forgotPassword" />
-        <action
-            android:id="@+id/action_corfirmEmail_to_forgotPassword2"
             app:destination="@id/forgotPassword" />
         <action
             android:id="@+id/action_corfirmEmail_to_changesPass"
@@ -192,5 +186,13 @@
         <action
             android:id="@+id/action_changesPass_to_login"
             app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="com.project.sibarevents.ui.event.categories.me.EditProfile"
+        android:label="EditProfile" >
+        <action
+            android:id="@+id/action_editProfile_to_myProfile"
+            app:destination="@id/myProfile" />
     </fragment>
 </navigation>
