@@ -81,7 +81,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/standard_size"
             android:textColor="@color/black"
-            android:password="false"
             android:background="@drawable/rounded_button_background"
             android:textAlignment="center" />
 
@@ -92,6 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="@color/black"
         android:text="@string/forgot_pass_string"
         app:layout_constraintEnd_toEndOf="@+id/CvPASSWORD"
         app:layout_constraintTop_toBottomOf="@+id/CvPASSWORD" />
@@ -110,6 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:textColor="@color/black"
         android:text="@string/remember_me_string"
         app:layout_constraintBottom_toBottomOf="@+id/checkbox_remember"
         app:layout_constraintStart_toEndOf="@+id/checkbox_remember"
