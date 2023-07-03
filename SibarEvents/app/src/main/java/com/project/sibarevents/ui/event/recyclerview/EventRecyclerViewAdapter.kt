@@ -12,6 +12,7 @@ class EventRecyclerViewAdapter(
 ) : RecyclerView.Adapter<EventRecyclerViewHolder>() {
     private val events = ArrayList<EventModel>()
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventRecyclerViewHolder {
         val binding = EventItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return EventRecyclerViewHolder(binding)

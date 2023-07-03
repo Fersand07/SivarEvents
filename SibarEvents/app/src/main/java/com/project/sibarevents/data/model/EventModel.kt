@@ -10,3 +10,5 @@ data class EventModel (
     val category: String,
     val Banner: String
         )
+
+
