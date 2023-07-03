@@ -94,6 +94,9 @@
         <action
             android:id="@+id/action_feed_to_myProfile"
             app:destination="@id/myProfile" />
+        <action
+            android:id="@+id/action_feed_to_information"
+            app:destination="@id/information" />
     </fragment>
     <fragment
         android:id="@+id/favoriesCategories"
@@ -192,5 +195,13 @@
         <action
             android:id="@+id/action_changesPass_to_login"
             app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/information"
+        android:name="com.project.sibarevents.ui.event.categories.home.Information"
+        android:label="Information" >
+        <action
+            android:id="@+id/action_information_to_feed"
+            app:destination="@id/feed" />
     </fragment>
 </navigation>

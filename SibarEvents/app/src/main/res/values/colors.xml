@@ -5,7 +5,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#E6979191</color>
-
+    <color name="darkgray">#8F8D8D</color>
 
     //Button color
     <color name="btnColor">#FF9800</color>
