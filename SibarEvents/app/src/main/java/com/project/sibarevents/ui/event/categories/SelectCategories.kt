@@ -35,7 +35,7 @@ class SelectCategories : Fragment() {
     }
 
     private fun listener() {
-        buttonDone.setOnClickListener {
+        skip.setOnClickListener {
             it.findNavController().navigate(R.id.action_selectCategories_to_feed)
         }
         buttonDone.setOnClickListener {
