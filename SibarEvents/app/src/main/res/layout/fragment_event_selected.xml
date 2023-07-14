@@ -31,7 +31,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/img_banner"
         app:layout_constraintTop_toBottomOf="@+id/btnBack" />
@@ -124,19 +124,55 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="I WILL PARTICIPATE"
-                android:textColor="@color/white" />
-
             <CheckBox
                 android:id="@+id/Cbx_participate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/i_will_participate"
+                android:textColor="@color/white"
                 android:buttonTint="#FFFFFF" />
         </LinearLayout>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="@dimen/standart_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/joining"/>
+        <LinearLayout
+
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Iv_info"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/imgprofile"/>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/imgprofile"/>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/imgprofile"/>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/imgprofile"/>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:src="@drawable/imgprofile"/>
+        </LinearLayout>
+    </LinearLayout>
 
     </LinearLayout>
 
