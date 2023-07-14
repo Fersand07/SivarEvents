@@ -1,5 +1,6 @@
 package com.project.sibarevents.ui.event.categories.home
 
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,6 +25,7 @@ class Feed : Fragment() {
 
     private lateinit var binding: FragmentFeedBinding
     private lateinit var adapter: EventRecyclerViewAdapter
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -80,7 +82,7 @@ class Feed : Fragment() {
 
     private fun showSelectedItem(event: EventModel){
         eventViewModel.setSelectedEvent(event)
-        //TODO: AGREGAR INFORMACION DE EVENTOS
+        findNavController().navigate(R.id.action_feed_to_eventSelected)
     }
 
 }
