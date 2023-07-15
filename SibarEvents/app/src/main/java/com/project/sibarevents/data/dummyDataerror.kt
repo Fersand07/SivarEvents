@@ -27,8 +27,8 @@ val category3 = "Sports"
 val banner3 = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Logo-san-salvador-2023.png/320px-Logo-san-salvador-2023.png"
 
 var events = mutableListOf(
-    EventModel(name, day_hour, location, description, category, banner),
-    EventModel(name2, day_hour2, location2, description2, category2, banner2),
-    EventModel(name3, day_hour3, location3, description3, category3, banner3),
+    EventModel(name, day_hour, location, description, banner),
+    EventModel(name2, day_hour2, location2, description2, banner2),
+    EventModel(name3, day_hour3, location3, description3, banner3),
 
     )

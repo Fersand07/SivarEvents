@@ -15,7 +15,6 @@ class EventViewModel (private val repository: EventRepository) : ViewModel() {
     var day_hour = MutableLiveData("")
     var location = MutableLiveData("")
     var description = MutableLiveData("")
-    var category = MutableLiveData("")
     var banner = MutableLiveData("")
     var status = MutableLiveData("")
 
@@ -31,7 +30,6 @@ class EventViewModel (private val repository: EventRepository) : ViewModel() {
             day_hour.value.isNullOrEmpty() -> return false
             location.value.isNullOrEmpty() -> return false
             description.value.isNullOrEmpty() -> return false
-            category.value.isNullOrEmpty() -> return false
             banner.value.isNullOrEmpty() -> return false
 
         }
@@ -43,7 +41,6 @@ class EventViewModel (private val repository: EventRepository) : ViewModel() {
         day_hour.value = ""
         location.value = ""
         description.value = ""
-        category.value = ""
         banner.value = ""
     }
 
@@ -62,7 +59,6 @@ class EventViewModel (private val repository: EventRepository) : ViewModel() {
             day_hour.value!!,
             location.value!!,
             description.value!!,
-            category.value!!,
             banner.value!!
         )
 
@@ -76,7 +72,6 @@ class EventViewModel (private val repository: EventRepository) : ViewModel() {
         day_hour.value = event.day_hour
         description.value = event.description
         location.value = event.location
-        category.value = event.category
     }
 
     companion object{

@@ -10,6 +10,7 @@ import androidx.navigation.findNavController
 
 import com.project.sibarevents.R
 import com.project.sibarevents.databinding.FragmentFeedBinding
+import com.project.sibarevents.databinding.FragmentFirstPageBinding
 import com.project.sibarevents.ui.event.categories.categories.categories
 import com.project.sibarevents.ui.event.categories.home.Feed
 
@@ -17,8 +18,7 @@ import com.project.sibarevents.ui.event.categories.home.Feed
 class FirstPage : Fragment() {
     private lateinit var buttonDiscover: Button
 
-
-
+    lateinit var binding: FragmentFirstPageBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

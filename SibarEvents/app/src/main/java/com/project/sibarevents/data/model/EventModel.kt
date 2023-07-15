@@ -7,6 +7,7 @@ data class EventModel (
     val day_hour: String,
     val location: String,
     val description: String,
-    val category: String,
     val Banner: String
         )
+
+
